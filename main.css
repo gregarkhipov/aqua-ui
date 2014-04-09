@@ -1,0 +1,570 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  background: #eee;
+  background: repeating-linear-gradient(45deg,#eee,#eee 10px,#e3e3e3 10px,#e3e3e3 20px);
+  /*
+  background: url(./pattern.png), repeating-linear-gradient(45deg,#eee,#eee 10px,#eaeaea 10px,#eaeaea 20px);
+  */
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "PT Sans", Verdana, sans-serif;
+}
+
+.asdf {
+  background: rgba(234, 234, 234, .92);
+  width: 403px;
+  height: 180px;
+  padding: 11px 12px;
+  display: block;
+  position: relative;
+  top: 0px;
+  z-index: 503;
+  margin: auto;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, .25), 0px 6px 7px -3px rgba(0, 0, 0, .35), 0px 0px 1px 1px rgba(0, 0, 0, .15), inset 0px 13px 7px -10px rgba(0, 0, 0, .3);
+}
+
+.asdf .brr {
+  background: rgba(0, 0, 0, .025);
+  height: 36px;
+  padding: 14px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, .3);
+  font-size: 10pt;
+  margin: 10px 0px;
+  margin-top: 14px;
+}
+
+.asdf .brr label {
+  margin-right: 10px;
+}
+
+.asdf .brr select {
+  width: 130px;
+  font-size: 10pt;
+  background: #28f;
+  border-radius: 4px;
+  border-color: rgb(152, 152, 152);
+  background-image: linear-gradient(rgb(255, 255, 255) 22%,
+                                    rgb(251, 251, 251) 27.5%,
+                                    rgb(249, 249, 249) 33%,
+                                    rgb(245, 245, 245) 38.5%,
+                                    rgb(242, 242, 242) 44%,
+                                    rgb(240, 240, 240) 50%,
+                                    rgb(231, 231, 231) 55.5%,
+                                    rgb(231, 231, 231) 72%,
+                                    rgb(232, 232, 232) 77.5%,
+                                    rgb(232, 232, 232) 89%,
+                                    rgb(235, 235, 235) 95%,
+                                    rgb(239, 239, 239) 100%);
+  background-image: -webkit-linear-gradient(rgb(255, 255, 255) 22%,
+                                            rgb(251, 251, 251) 27.5%,
+                                            rgb(249, 249, 249) 33%,
+                                            rgb(245, 245, 245) 38.5%,
+                                            rgb(242, 242, 242) 44%,
+                                            rgb(240, 240, 240) 50%,
+                                            rgb(231, 231, 231) 55.5%,
+                                            rgb(231, 231, 231) 72%,
+                                            rgb(232, 232, 232) 77.5%,
+                                            rgb(232, 232, 232) 89%,
+                                            rgb(235, 235, 235) 95%,
+                                            rgb(239, 239, 239) 100%);
+  box-shadow: inset 3px 0px 3px -3px rgba(0, 0, 0, .2), inset -3px 0px 3px -3px rgba(0, 0, 0, .2);
+}
+
+.asdf .brr #descr {
+  margin-top: 5px;
+  font-size: 7.7pt;
+}
+
+.buttons {
+  position: relative;
+  display: inline-block;
+  float: right;
+  clear: both;
+  margin-right: 7px;
+  margin-top: 2px;
+}
+
+.qwerty, .zqwerty, .aqwerty {
+  vertical-align: top;
+  display: inline-block;
+  margin: 0px 5px;
+  padding: 1px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  color: #000;
+  border-radius: 4.5px;
+  background-image: -webkit-linear-gradient(rgb(76, 80, 163) 0%, rgb(69, 70, 94) 100%);
+  background-image: linear-gradient(rgb(76, 80, 163) 0%, rgb(69, 70, 94) 100%);
+}
+
+.zqwerty {
+  background-image: -webkit-linear-gradient(rgb(152, 152, 152) 0%, rgb(142, 142, 142) 100%);
+  background-image: linear-gradient(rgb(152, 152, 152) 0%, rgb(142, 142, 142) 100%);
+}
+
+.qwerty:active, .zqwerty:active, .aqwerty:active {
+  background-image: -webkit-linear-gradient(rgb(66, 71, 160) 0%, rgb(59, 61, 99) 100%);
+  background-image: linear-gradient(rgb(66, 71, 160) 0%, rgb(59, 61, 99) 100%);
+}
+
+.qwerty div, .zqwerty div {
+  padding: 0px 12px;
+  padding-top: 1px;
+  height: 18px;
+  min-width: 50px;
+  width: auto;
+  background: #28f;
+  border-radius: 3.5px;
+  background-image: -webkit-linear-gradient(rgb(229, 247, 255) 0%,
+                                            rgb(210, 236, 253) 5.5%,
+                                            rgb(199, 228, 252) 11%,
+                                            rgb(196, 221, 252) 16.5%,
+                                            rgb(189, 222, 255) 22%,
+                                            rgb(180, 216, 252) 27.5%,
+                                            rgb(177, 216, 253) 33%,
+                                            rgb(168, 211, 252) 38.5%,
+                                            rgb(162, 210, 252) 44%,
+                                            rgb(155, 207, 254) 50%,
+                                            rgb(138, 191, 249) 55.5%,
+                                            rgb(140, 196, 252) 61%,
+                                            rgb(148, 202, 252) 66.5%,
+                                            rgb(161, 212, 255) 72%,
+                                            rgb(170, 217, 253) 77.5%,
+                                            rgb(179, 224, 253) 83%,
+                                            rgb(187, 232, 255) 89%,
+                                            rgb(203, 242, 255) 95%,
+                                            rgb(219, 244, 255) 100%);
+  background-image: linear-gradient(rgb(229, 247, 255) 0%,
+                                    rgb(210, 236, 253) 5.5%,
+                                    rgb(199, 228, 252) 11%,
+                                    rgb(196, 221, 252) 16.5%,
+                                    rgb(189, 222, 255) 22%,
+                                    rgb(180, 216, 252) 27.5%,
+                                    rgb(177, 216, 253) 33%,
+                                    rgb(168, 211, 252) 38.5%,
+                                    rgb(162, 210, 252) 44%,
+                                    rgb(155, 207, 254) 50%,
+                                    rgb(138, 191, 249) 55.5%,
+                                    rgb(140, 196, 252) 61%,
+                                    rgb(148, 202, 252) 66.5%,
+                                    rgb(161, 212, 255) 72%,
+                                    rgb(170, 217, 253) 77.5%,
+                                    rgb(179, 224, 253) 83%,
+                                    rgb(187, 232, 255) 89%,
+                                    rgb(203, 242, 255) 95%,
+                                    rgb(219, 244, 255) 100%);
+  box-shadow: inset 3px 0px 3px -3px rgba(0, 0, 0, .2), inset -3px 0px 3px -3px rgba(0, 0, 0, .2);
+}
+
+.zqwerty div {
+  background-image: linear-gradient(rgb(255, 255, 255) 22%,
+                                    rgb(251, 251, 251) 27.5%,
+                                    rgb(249, 249, 249) 33%,
+                                    rgb(245, 245, 245) 38.5%,
+                                    rgb(242, 242, 242) 44%,
+                                    rgb(240, 240, 240) 50%,
+                                    rgb(231, 231, 231) 55.5%,
+                                    rgb(231, 231, 231) 72%,
+                                    rgb(232, 232, 232) 77.5%,
+                                    rgb(232, 232, 232) 89%,
+                                    rgb(235, 235, 235) 95%,
+                                    rgb(239, 239, 239) 100%);
+  background-image: -webkit-linear-gradient(rgb(255, 255, 255) 22%,
+                                            rgb(251, 251, 251) 27.5%,
+                                            rgb(249, 249, 249) 33%,
+                                            rgb(245, 245, 245) 38.5%,
+                                            rgb(242, 242, 242) 44%,
+                                            rgb(240, 240, 240) 50%,
+                                            rgb(231, 231, 231) 55.5%,
+                                            rgb(231, 231, 231) 72%,
+                                            rgb(232, 232, 232) 77.5%,
+                                            rgb(232, 232, 232) 89%,
+                                            rgb(235, 235, 235) 95%,
+                                            rgb(239, 239, 239) 100%);
+}
+
+.qwerty div:active, .zqwerty div:active, .aqwerty:active .two {
+  background-image: -webkit-linear-gradient(rgb(176, 205, 236) 0%,
+                                            rgb(148, 179, 237) 5.5%,
+                                            rgb(136, 169, 229) 11%,
+                                            rgb(128, 163, 229) 16.5%,
+                                            rgb(121, 161, 230) 22%,
+                                            rgb(114, 155, 230) 27.5%,
+                                            rgb(107, 154, 230) 33%,
+                                            rgb(99, 150, 230) 38.5%,
+                                            rgb(92, 147, 230) 44%,
+                                            rgb(87, 143, 230) 50%,
+                                            rgb(58, 128, 230) 55.5%,
+                                            rgb(64, 132, 231) 61%,
+                                            rgb(73, 140, 234) 66.5%,
+                                            rgb(85, 150, 236) 72%,
+                                            rgb(96, 158, 236) 77.5%,
+                                            rgb(109, 167, 237) 83%,
+                                            rgb(122, 178, 237) 89%,
+                                            rgb(135, 189, 236) 95%,
+                                            rgb(158, 203, 236) 100%);
+  background-image: linear-gradient(rgb(176, 205, 236) 0%,
+                                    rgb(148, 179, 237) 5.5%,
+                                    rgb(136, 169, 229) 11%,
+                                    rgb(128, 163, 229) 16.5%,
+                                    rgb(121, 161, 230) 22%,
+                                    rgb(114, 155, 230) 27.5%,
+                                    rgb(107, 154, 230) 33%,
+                                    rgb(99, 150, 230) 38.5%,
+                                    rgb(92, 147, 230) 44%,
+                                    rgb(87, 143, 230) 50%,
+                                    rgb(58, 128, 230) 55.5%,
+                                    rgb(64, 132, 231) 61%,
+                                    rgb(73, 140, 234) 66.5%,
+                                    rgb(85, 150, 236) 72%,
+                                    rgb(96, 158, 236) 77.5%,
+                                    rgb(109, 167, 237) 83%,
+                                    rgb(122, 178, 237) 89%,
+                                    rgb(135, 189, 236) 95%,
+                                    rgb(158, 203, 236) 100%);
+}
+
+@-webkit-keyframes button {
+	0%   { opacity: 0; }
+	50%  { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@keyframes button {
+	0%   { opacity: 0; }
+	50%  { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+.aqwerty {
+  height: 19px;
+  width: 70px;
+}
+
+.aqwerty > * {
+  height: 19px;
+  width: 70px;
+  position: absolute;
+}
+
+.aqwerty .title {
+  z-index: 502;
+  margin-top: 1px;
+}
+
+.aqwerty .one {
+  z-index: 500;
+  border-radius: 3.5px;
+  background-image: -webkit-linear-gradient(rgb(229, 247, 255) 0%,
+                                            rgb(210, 236, 253) 5.5%,
+                                            rgb(199, 228, 252) 11%,
+                                            rgb(196, 221, 252) 16.5%,
+                                            rgb(189, 222, 255) 22%,
+                                            rgb(180, 216, 252) 27.5%,
+                                            rgb(177, 216, 253) 33%,
+                                            rgb(168, 211, 252) 38.5%,
+                                            rgb(162, 210, 252) 44%,
+                                            rgb(155, 207, 254) 50%,
+                                            rgb(138, 191, 249) 55.5%,
+                                            rgb(140, 196, 252) 61%,
+                                            rgb(148, 202, 252) 66.5%,
+                                            rgb(161, 212, 255) 72%,
+                                            rgb(170, 217, 253) 77.5%,
+                                            rgb(179, 224, 253) 83%,
+                                            rgb(187, 232, 255) 89%,
+                                            rgb(203, 242, 255) 95%,
+                                            rgb(219, 244, 255) 100%);
+  background-image: linear-gradient(rgb(229, 247, 255) 0%,
+                                    rgb(210, 236, 253) 5.5%,
+                                    rgb(199, 228, 252) 11%,
+                                    rgb(196, 221, 252) 16.5%,
+                                    rgb(189, 222, 255) 22%,
+                                    rgb(180, 216, 252) 27.5%,
+                                    rgb(177, 216, 253) 33%,
+                                    rgb(168, 211, 252) 38.5%,
+                                    rgb(162, 210, 252) 44%,
+                                    rgb(155, 207, 254) 50%,
+                                    rgb(138, 191, 249) 55.5%,
+                                    rgb(140, 196, 252) 61%,
+                                    rgb(148, 202, 252) 66.5%,
+                                    rgb(161, 212, 255) 72%,
+                                    rgb(170, 217, 253) 77.5%,
+                                    rgb(179, 224, 253) 83%,
+                                    rgb(187, 232, 255) 89%,
+                                    rgb(203, 242, 255) 95%,
+                                    rgb(219, 244, 255) 100%);
+box-shadow: inset 3px 0px 3px -3px rgba(0, 0, 0, .2), inset -3px 0px 3px -3px rgba(0, 0, 0, .2);
+
+}
+
+.aqwerty .two {
+  z-index: 501;
+  border-radius: 3.5px;
+  -webkit-animation: button 1s infinite;
+  animation: button 1s infinite;
+  background-image: -webkit-linear-gradient(rgb(199, 217, 251) 0%,
+                                            rgb(181, 205, 239) 5.5%,
+                                            rgb(171 ,197, 236) 11%,
+                                            rgb(163, 193, 236) 16.5%,
+                                            rgb(158, 189, 237) 22%,
+                                            rgb(155, 188, 240) 27.5%,
+                                            rgb(148, 185, 242) 33%,
+                                            rgb(142, 182, 242) 38.5%,
+                                            rgb(135, 178, 242) 44%,
+                                            rgb(128, 177, 243) 50%,
+                                            rgb(110, 164, 234) 55.5%,
+                                            rgb(111, 167, 237) 61%,
+                                            rgb(120, 175, 243) 66.5%,
+                                            rgb(130, 182, 246) 72%,
+                                            rgb(139, 188, 245) 77.5%,
+                                            rgb(149, 196, 244) 83%,
+                                            rgb(156, 202, 243) 89%,
+                                            rgb(170, 210, 243) 95%,
+                                            rgb(187, 214, 239) 100%);
+  background-image: linear-gradient(rgb(199, 217, 251) 0%,
+                                    rgb(181, 205, 239) 5.5%,
+                                    rgb(171 ,197, 236) 11%,
+                                    rgb(163, 193, 236) 16.5%,
+                                    rgb(158, 189, 237) 22%,
+                                    rgb(155, 188, 240) 27.5%,
+                                    rgb(148, 185, 242) 33%,
+                                    rgb(142, 182, 242) 38.5%,
+                                    rgb(135, 178, 242) 44%,
+                                    rgb(128, 177, 243) 50%,
+                                    rgb(110, 164, 234) 55.5%,
+                                    rgb(111, 167, 237) 61%,
+                                    rgb(120, 175, 243) 66.5%,
+                                    rgb(130, 182, 246) 72%,
+                                    rgb(139, 188, 245) 77.5%,
+                                    rgb(149, 196, 244) 83%,
+                                    rgb(156, 202, 243) 89%,
+                                    rgb(170, 210, 243) 95%,
+                                    rgb(187, 214, 239) 100%);
+}
+
+.aqwerty:active .two {
+  -webkit-animation: none;
+  animation: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.asdf, #info {
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: .25s;
+  -moz-transition-duration: .25s;
+  transition-duration: .25s;
+}
+
+.collapsed {
+  top: -250px;
+}
+
+.info {
+  margin: auto;
+  padding-top: 300px;
+  width: 700px;
+  position: relative;
+  top: -200px;
+  z-index: 501;
+}
+
+.info .save {
+  margin-top: 7px;
+  margin-bottom: 12px;
+  display: block;
+  color: rgba(0, 0, 0, .6);
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, .6);
+  text-decoration: none;
+  font-size: 11pt;
+  float: right;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-transition-duration: .1s;
+  -moz-transition-duration: .1s;
+  transition-duration: .1s;
+}
+
+.info .save span {
+  margin-left: 10px;
+  color: rgba(0, 0, 0, .5);
+  padding: 1px 2px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, .05);
+  box-shadow: inset 0px -1px 1px rgba(255, 255, 255, .4), inset 0px 1px 2px -1px rgba(0, 0, 0, .2);
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-transition-duration: .1s;
+  -moz-transition-duration: .1s;
+  transition-duration: .1s;
+}
+
+.info .save:hover {
+  color: rgba(0, 0, 0, .7);
+}
+
+.info .save:hover span {
+  color: rgba(0, 0, 0, .6);
+}
+
+.info .save:active {
+  color: rgba(0, 0, 0, .8);
+}
+
+.info .save:active span {
+  color: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, .08);
+  box-shadow: inset 0px -1px 1px rgba(255, 255, 255, .6), inset 0px 1px 2px -1px rgba(0, 0, 0, .35);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 130px;
+  border: 1px solid rgb(152, 152, 152);
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(rgb(255, 255, 255) 22%,
+                                            rgb(251, 251, 251) 27.5%,
+                                            rgb(249, 249, 249) 33%,
+                                            rgb(245, 245, 245) 38.5%,
+                                            rgb(242, 242, 242) 44%,
+                                            rgb(240, 240, 240) 50%,
+                                            rgb(231, 231, 231) 55.5%,
+                                            rgb(231, 231, 231) 72%,
+                                            rgb(232, 232, 232) 77.5%,
+                                            rgb(232, 232, 232) 89%,
+                                            rgb(235, 235, 235) 95%,
+                                            rgb(239, 239, 239) 100%);
+  background-image: linear-gradient(rgb(255, 255, 255) 22%,
+                                    rgb(251, 251, 251) 27.5%,
+                                    rgb(249, 249, 249) 33%,
+                                    rgb(245, 245, 245) 38.5%,
+                                    rgb(242, 242, 242) 44%,
+                                    rgb(240, 240, 240) 50%,
+                                    rgb(231, 231, 231) 55.5%,
+                                    rgb(231, 231, 231) 72%,
+                                    rgb(232, 232, 232) 77.5%,
+                                    rgb(232, 232, 232) 89%,
+                                    rgb(235, 235, 235) 95%,
+                                    rgb(239, 239, 239) 100%);
+  box-shadow: inset 3px 0px 3px -3px rgba(0, 0, 0, .2), inset -3px 0px 3px -3px rgba(0, 0, 0, .2);
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.dropdown:before, .dropdown:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  right: 7px;
+  width: 0;
+  height: 0;
+  border: 3px dashed;
+  border-color: rgb(57, 57, 57) transparent;
+  pointer-events: none;
+}
+
+.dropdown:before {
+  border-bottom-style: solid;
+  border-top: none;
+}
+
+.dropdown:after {
+  margin-top: 7px;
+  border-top-style: solid;
+  border-bottom: none;
+}
+
+.datdropdownlist {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  padding: 0px 10px;
+  height: 20px;
+  font-size: 10pt;
+  background: rgba(0, 0, 0, 0) !important;
+  border: none;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+}
+
+.datdropdownlist:focus {
+  z-index: 3;
+  width: 100%;
+  outline: none;
+  outline-offset: 0px;
+}
+
+.asdf .name,
+.asdf .path {
+  font-size: 10pt;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 6px;
+}
+
+.asdf .name {
+  margin-top: 14px;
+}
+
+.asdf .name label,
+.asdf .path label {
+  display: inline-block;
+  margin-right: 2px;
+  width: 70px;
+  text-align: right;
+}
+
+.asdf .name input,
+.asdf .path input {
+  height: 20px;
+  width: 240px;
+  font-size: 10pt;
+  padding: 0px 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid rgb(195, 195, 195);
+  border-top-color: rgb(152, 152, 152);
+  box-shadow: inset 0px 1px 2px -1px rgba(0, 0, 0, .35);
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.asdf .name input::selection,
+.asdf .path input::selection {
+  background: #A8CBFF !important;
+}
+
+.asdf .name input::-moz-selection,
+.asdf .path input::-moz-selection {
+  background: #A8CBFF !important;
+}
+
+.asdf .name input:focus,
+.asdf .path input:focus {
+  outline: none;
+  outline-offset: 0px;
+  border-radius: 2px;
+  border-color: rgb(90, 150, 200);
+  box-shadow: 0px 0px 2px 2px rgba(110, 160, 210, .9), inset 0px 1px 2px -1px rgba(0, 0, 0, .25);
+}

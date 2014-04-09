@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aqua UI</title>
+<link href="./favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+<link rel="stylesheet" type="text/css" href="./main.css">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".button").click(function(){
+      $("#block").toggleClass("collapsed");
+    });
+  });
+</script>
+</head>
+<body>
+  <div id="block" class="asdf collapsed">
+    <div class="name">
+      <label for="export" >Export As:</label>
+      <input type="text" name="export" value="index.webarchive">
+    </div>
+    <div class="path">
+      <label for="path" >Where:</label>
+      <input type="text" name="path" value="Desktop">
+    </div>
+    <div class="brr">
+      <label for="format">Format:</label>
+      <div class="dropdown">
+        <select name="format" id="dropdownlist" class="datdropdownlist">
+          <option value="Saves only the source text of this page." >Page Source</option>
+          <option value="Saves text, images, and other content of this page." selected>Web Archive</option>
+        </select>
+      </div>
+      <div id="descr">Saves text, images, and other content of this page.</div>
+      <script type="text/javascript">
+        $('#dropdownlist').change(function(){
+          x = $(this).val();
+          $('#descr').text(x);
+        })
+      </script>
+    </div>
+    <div class="buttons">
+      <a href="#" class="button zqwerty"><div>Cancel</div></a>
+      <a href="#" class="button aqwerty"><div class="title">Save</div><div class="one"></div><div class="two"></div></a>
+    </div>
+  </div>
+  <div id="info" class="info">
+    <a href="#" class="button save">Save As... <span>&#x2318;S</span></a>
+  </div>
+</body>
+</html>
