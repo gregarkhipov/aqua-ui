@@ -5,6 +5,10 @@
 
 html {
   background: #eee;
+  background: repeating-linear-gradient(45deg,#eee,#eee 10px,#e3e3e3 10px,#e3e3e3 20px);
+  /*
+  background: url(./pattern.png), repeating-linear-gradient(45deg,#eee,#eee 10px,#eaeaea 10px,#eaeaea 20px);
+  */
   font-family: "Lucida Grande", "Lucida Sans Unicode", "PT Sans", Verdana, sans-serif;
 }
 
